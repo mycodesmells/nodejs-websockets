@@ -9,7 +9,7 @@
     <script type="text/javascript">
       var client = io('localhost:3000');
 
-      client.on('aaa', function (data) {
+      client.on('message', function (data) {
           console.log('data', data);
       });
     </script>
