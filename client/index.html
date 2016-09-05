@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebSockets example</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var client = io('localhost:3000');
+
+      client.on('aaa', function (data) {
+          console.log('data', data);
+      });
+    </script>
+  </body>
+</html>
